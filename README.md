@@ -38,10 +38,10 @@ Streamには対応しておりません。気力がありましたらその内�
     // Apps
     std::string CreateApp(const std::string& AppName, const std::vector<std::string>& scopes, const std::string& redirect = "", const std::string& website = "", const std::string& fname = "");
     
-*Example Regist App:  
-** 	Mastodon *m = new Mastodon("mstdn-workers.com");  
-**    	std::vector<std::string> scopes = { "write", "read", "follow" };  
-**    	m->CreateApp("YourAppName", scopes, "", "");  
+Example Regist App:  
+ 	Mastodon *m = new Mastodon("mstdn-workers.com");  
+    	std::vector<std::string> scopes = { "write", "read", "follow" };  
+    	m->CreateApp("YourAppName", scopes, "", "");  
 
     // Get Token
     std::string GetToken(const std::string &client_id, const std::string &id_secret, const std::string &Mail, const std::string &Pass, const std::string& fname = "");
