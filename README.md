@@ -4,7 +4,7 @@ Mastodon Libarary for C++. But this libary is incomplete.
 ## Dependency
 * libcurl
 * openssl
-* base64
+* [base64](http://renenyffenegger.ch/notes/development/Base64/Encoding-and-decoding-base-64-with-cpp)
 * picojson
 
 ## Overview
