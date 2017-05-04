@@ -1,0 +1,7 @@
+*.so
+*.a
+*.dylib
+*.dll
+.DS_Store
+._*
+*.o
