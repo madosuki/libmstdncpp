@@ -14,8 +14,9 @@ Streamには対応しておりません。気力がありましたらその内�
 ライセンスについてはMITですが、同梱しているbase64、picojsonは各自のライセンスに従ってください。  
 またjsonが帰ってくるAPIについてはstring型でそのまま返ってくるようにしています。  
 
+`
 // Accounts
-`std::string GetAccount(const int& id = 0);
+std::string GetAccount(const int& id = 0);
 std::string UpdateAccount(const std::string display_name = "", const std::string note = "", const std::string avatar = "", const std::string header = "");
 std::string GetFollowers(const int& id, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
 std::string GetFollowersNext();
@@ -96,7 +97,7 @@ std::string GetWhoFavouritedStatus(const int& id, const int& max_id = 0, const i
 std::string GetFavouritedNext();
 std::string GetFavouritedPrev();
 std::string Toot(const std::string& Text, const int& in_reply_to_id = 0, std::vector<int> media_ids = { 0 }, bool sensitive = false, const std::string& spoiler_text = "", const std::string& visibility = "");
-	bool DeleteToot(const int& id);
+bool DeleteToot(const int& id);
 std::string Reblog(const int& id);
 std::string UnReblog(const int& id);
 std::string Favourite(const int& id);
@@ -105,4 +106,5 @@ std::string UnFavourite(const int& id);
 // Timelines
 std::string GetTimeLines(const std::string& type, const std::string& hashtag = "", const std::string& local = "", const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
 std::string GetTimeLineNext();
-std::string GetTimeLinePrev();`
+std::string GetTimeLinePrev();
+`
