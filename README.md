@@ -41,7 +41,7 @@ Streamには対応しておりません。気力がありましたらその内�
 Example Regist App:  
 Mastodon *m = new Mastodon("mstdn-workers.com");  
 std::vector<std::string> scopes = { "write", "read", "follow" };  
-m->CreateApp("YourAppName", scopes, "", "");  
+m->CreateApp("YourAppName", scopes, "", "");  
 ファイル名を入れればそのファイル名で保存します。入れなければstring型で返ってきます。  
 
     // Get Token
