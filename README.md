@@ -39,9 +39,9 @@ Streamには対応しておりません。気力がありましたらその内�
     std::string CreateApp(const std::string& AppName, const std::vector<std::string>& scopes, const std::string& redirect = "", const std::string& website = "", const std::string& fname = "");
     
 Example Regist App:  
-Mastodon *m = new Mastodon("mstdn-workers.com");  
-std::vector<std::string> scopes = { "write", "read", "follow" };  
-m->CreateApp("YourAppName", scopes, "", "");  
+    Mastodon *m = new Mastodon("mstdn-workers.com");  
+    std::vector<std::string> scopes = { "write", "read", "follow" };  
+    m->CreateApp("YourAppName", scopes, "", "");  
 ファイル名を入れればそのファイル名で保存します。入れなければstring型で返ってきます。  
 
     // Get Token
