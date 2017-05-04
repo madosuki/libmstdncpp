@@ -14,26 +14,26 @@ Streamには対応しておりません。気力がありましたらその内�
 ライセンスについてはMITですが、同梱しているbase64、picojsonは各自のライセンスに従ってください。  
 またjsonが帰ってくるAPIについてはstring型でそのまま返ってくるようにしています。  
 
-// Accounts
-std::string GetAccount(const int& id = 0);
-std::string UpdateAccount(const std::string display_name = "", const std::string note = "", const std::string avatar = "", const std::string header = "");
-std::string GetFollowers(const int& id, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
-std::string GetFollowersNext();
-std::string GetFollowersPrev();
-std::string GetFollowing(const int& id, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
-std::string GetFollowingNext();
-std::string GetFollowingPrev();
-std::string GetAccountsStatuses(const int& id, bool only_media = false, bool exclude_replies = false, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
-std::string GetAccountsStatusNext();
-std::string GetAccountsStatusPrev();
-std::string GetAccountsFollow(const int& id);
-std::string GetAccountsUnFollow(const int& id);
-std::string GetAccountsBlock(const int& id);
-std::string GetAccountsUnBlock(const int& id);
-std::string GetAccountsMute(const int& id);
-std::string GetAccountsUnMute(const int& id);
-std::string GetAccountsRelationships(const std::vector<int>& ids);
-std::string AccountsSearch(const std::string& q, const int& limit = 40);
+    // Accounts
+    std::string GetAccount(const int& id = 0);
+    std::string UpdateAccount(const std::string display_name = "", const std::string note = "", const std::string avatar = "", const std::string header = "");
+    std::string GetFollowers(const int& id, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
+    std::string GetFollowersNext();
+    std::string GetFollowersPrev();
+    std::string GetFollowing(const int& id, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
+    std::string GetFollowingNext();
+    std::string GetFollowingPrev();
+    std::string GetAccountsStatuses(const int& id, bool only_media = false, bool exclude_replies = false, const int& max_id = 0, const int& since_id = 0, const int& limit = 0);
+    std::string GetAccountsStatusNext();
+    std::string GetAccountsStatusPrev();
+    std::string GetAccountsFollow(const int& id);
+    std::string GetAccountsUnFollow(const int& id);
+    std::string GetAccountsBlock(const int& id);
+    std::string GetAccountsUnBlock(const int& id);
+    std::string GetAccountsMute(const int& id);
+    std::string GetAccountsUnMute(const int& id);
+    std::string GetAccountsRelationships(const std::vector<int>& ids);
+    std::string AccountsSearch(const std::string& q, const int& limit = 40);
 
     // Apps
     std::string CreateApp(const std::string& AppName, const std::vector<std::string>& scopes, const std::string& redirect = "", const std::string& website = "", const std::string& fname = "");
